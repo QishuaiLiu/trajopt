@@ -14,6 +14,9 @@ git clone https://github.com/ros-planning/moveit_resources.git -b master
 git clone https://github.com/ros-planning/moveit_tutorials.git
 git clone https://github.com/ros-planning/moveit_visual_tools.git -b noetic-devel
 git clone https://github.com/ros-planning/panda_moveit_config.git -b noetic-devel
+## modify the config file
+sed -i 's/type: 3/type: 2/g' panda_moveit_config/config/trajopt_planning.yaml
+
 git clone https://github.com/PickNikRobotics/rviz_visual_tools.git
 git clone https://github.com/ros-planning/srdfdom.git -b noetic-devel
 git clone https://github.com/tesseract-robotics/tesseract.git -b 0.17.0
